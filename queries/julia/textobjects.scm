@@ -86,7 +86,11 @@
   (_)? @function.inner .)
 
 (assignment
-  (call_expression)
+  [
+    (call_expression)
+    (where_expression
+      (call_expression))
+  ]
   (operator)
   (_) @function.inner) @function.outer
 
